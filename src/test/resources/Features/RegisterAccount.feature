@@ -1,30 +1,16 @@
-Feature: Register functionality
+Feature: Register functionality using DataTable
 
   Background: 
-    Given User is on TEST Environment page
+    Given user test Register funtionality using data table
 
-  @Register
-  Scenario: Register an account in  test Environment page
+  @DataTable
+  Scenario: Register an account in  test Environment page using DataTable
     When User clicks on MyAccount
-    And User enters his name '<Sayed>'
-    And User enters cityname  '<Seattle WA>'
-    And User enters address '< Washington>'
-    And User enters email address '<sayed@rewa.org>'
-    And User enters password '<Washington@$12345>'
-    Then User click registerButton
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    And user click on Register
+    And user fills out the following information
+      | FirstName | LastName | Email                  | Telephone  | Country | Password | ConfirmPassword |
+      | Sayed     | Sadat    | sayed@toptechschool.us | 2536529199 | US      | test123  | test123         |
+    And user subscribes to newsletter
+    And user  checks the Privacy Policy checkbox
+    Then user clicks the Continue button
+    And user is registerd and received the following message 'you are successfully registered'
