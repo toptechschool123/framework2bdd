@@ -13,7 +13,7 @@ import core.BaseClass;
 public class LoginPageObjects extends BaseClass  {
 	
 	
-	public LoginPageObjects() {
+	public LoginPageObjects() { 
 		
 		PageFactory.initElements(driver, this);
 	}

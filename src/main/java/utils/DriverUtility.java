@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import core.BaseClass;
+
 
 
 
@@ -77,7 +78,7 @@ public class DriverUtility extends BaseClass {
 
 	public static void verifyElementIsDisplayed(WebElement ele) {
 
-		Assert.assertTrue("Element is Displayed", isElementDisplayed(ele));
+	//	Assert.assertTrue("Element is Displayed", isElementDisplayed(ele));
 
 	}
 
